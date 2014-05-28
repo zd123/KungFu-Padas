@@ -1,0 +1,30 @@
+Pandas Assignment 1:
+Teacher: Zack DeSario
+Date: June 1, 2014
+
+1:  Start pandas and read in the 'Titanic.csv' datafile.  Save it as 'df' 
+
+2:  Rename the columns to:
+['Survived', 'Class', 'Name', 'Sex', 'Age', 'SibSp', 'ParCh', 'TicketId', 'Fare', 'Cabin', 'Embarked']
+
+
+# 3: Tell me how many people survived. 
+Died:  549
+Lived: 342
+
+# 4: Of thoes who survived, how many were male and how many were female? 
+df.groupby('Survived')['Sex'].value_counts()
+
+Died:
+    Male: 468
+    Female: 81
+
+Survived:
+    Female: 223
+    Male:   109
+
+# 5:  Pandas thinks the "Class" col is a number, but it should actually be a string.  So, covert the "Class" col to a string.
+
+df.Class = df.Class.astype(str)
+
+
