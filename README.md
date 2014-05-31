@@ -1,1 +1,1 @@
-# Please fork this repo, then clone your fork onto your machine
+# Please fork this repo, then clone that fork onto your machine.
